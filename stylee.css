@@ -1,0 +1,370 @@
+/* ========== CSS RESET & BASE STYLES ========== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    color: #333;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* ========== HEADER ========== */
+header {
+    text-align: center;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+h1 {
+    color: slateblue;
+    font-size: 2.5em;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.intro {
+    font-size: 1.3em;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* ========== THEME BUTTON ========== */
+#themeBtn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+#themeBtn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+#themeBtn:active {
+    transform: translateY(0);
+}
+
+/* ========== SECTIONS ========== */
+section {
+    margin: 30px 0;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: slateblue;
+    font-size: 2em;
+    margin-bottom: 20px;
+    border-bottom: 3px solid slateblue;
+    padding-bottom: 10px;
+}
+
+p {
+    margin: 15px 0;
+    font-size: 1.1em;
+    line-height: 1.8;
+}
+
+/* ========== ABOUT SECTION ========== */
+.about-content {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.about-content img {
+    border-radius: 50%;
+    border: 5px solid slateblue;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.about-content img:hover {
+    transform: scale(1.05);
+}
+
+/* ========== SOCIAL LINKS ========== */
+.social-links {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.social-links a {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 25px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.social-links a:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+.icon {
+    font-size: 1.3em;
+}
+
+/* ========== LISTS ========== */
+ul {
+    list-style-position: inside;
+    margin: 15px 0;
+    padding-left: 20px;
+}
+
+ul li {
+    margin: 10px 0;
+    font-size: 1.1em;
+    transition: transform 0.2s ease;
+}
+
+ul li:hover {
+    transform: translateX(10px);
+}
+
+.sty {
+    color: rgb(240, 128, 191);
+}
+
+.le {
+    color: hotpink;
+}
+
+.le ul li {
+    color: #333;
+}
+
+.js {
+    color: indianred;
+}
+
+.last {
+    color: crimson;
+}
+
+/* ========== TABLE STYLES ========== */
+.table-container {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border: 3px solid rgb(134, 12, 12);
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color: white;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    border: 2px solid rgb(134, 12, 12);
+    padding: 15px;
+    text-align: left;
+}
+
+caption {
+    background-color: lightyellow;
+    padding: 15px;
+    font-size: 1.5em;
+    font-weight: bold;
+    border: 3px solid rgb(134, 12, 12);
+    border-bottom: none;
+}
+
+.cls0 {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    font-weight: 700;
+    font-size: 1.2em;
+}
+
+tbody tr {
+    transition: all 0.3s ease;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tbody tr:hover {
+    background-color: #ffe6e6 !important;
+    transform: scale(1.02);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* ========== HORIZONTAL RULE ========== */
+hr {
+    border: none;
+    height: 2px;
+    background: linear-gradient(to right, transparent, darkred, transparent);
+    margin: 30px 0;
+}
+
+/* ========== FOOTER ========== */
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border-radius: 10px;
+    font-size: 1.1em;
+}
+
+/* ========== DARK MODE ========== */
+body.dark {
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+    color: #e0e0e0;
+}
+
+body.dark .container {
+    background-color: rgba(30, 30, 30, 0.95);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+body.dark section {
+    background-color: rgba(40, 40, 40, 0.5);
+}
+
+body.dark h1,
+body.dark h2 {
+    color: #bb86fc;
+}
+
+body.dark p,
+body.dark li {
+    color: #e0e0e0;
+}
+
+body.dark table {
+    background-color: #2a2a2a;
+    border-color: #bb86fc;
+}
+
+body.dark th,
+body.dark td {
+    border-color: #bb86fc;
+    color: #e0e0e0;
+}
+
+body.dark tbody tr:nth-child(even) {
+    background-color: #333;
+}
+
+body.dark tbody tr:hover {
+    background-color: #4a4a4a !important;
+}
+
+body.dark caption {
+    background-color: #3a3a3a;
+    color: #bb86fc;
+    border-color: #bb86fc;
+}
+
+/* ========== RESPONSIVE DESIGN ========== */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    .container {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 1.8em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    #themeBtn {
+        position: static;
+        margin: 10px auto;
+        display: block;
+    }
+
+    .about-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-content img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .social-links {
+        flex-direction: column;
+    }
+
+    table {
+        font-size: 0.9em;
+    }
+
+    th, td {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5em;
+    }
+
+    h2 {
+        font-size: 1.2em;
+    }
+
+    p, li {
+        font-size: 1em;
+    }
+
+    .about-content img {
+        width: 150px;
+        height: 150px;
+    }
+}
